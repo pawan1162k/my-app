@@ -2,7 +2,8 @@
 import './App.css';
 //import Greet from './components/Greet';
 import { Component } from 'react';
-import PortalDemo from './components/PortalDemo';
+import Hero from './components/Hero';
+// import PortalDemo from './components/PortalDemo';
 // import Table from './components/Table';
 //import Welcome from './components/Welcome';
 //import Message from './components/message';
@@ -24,16 +25,22 @@ import PortalDemo from './components/PortalDemo';
 // import PureComp from './components/PureComp';
 // import ParentComp from './components/ParentComp';
 // import RefsDemo from './components/RefsDemo';
-
+import ErrorBoundary from './components/ErrorBoundary';
 //Class component 
 class App extends Component{
   render(){
     return (
       <div className='App'>
-        <PortalDemo></PortalDemo>
-
-
-
+        <ErrorBoundary>
+          <Hero heroName='Batman'></Hero>
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Hero heroName='Superman'></Hero>
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Hero heroName='Joker'></Hero>
+        </ErrorBoundary>
+        {/* <PortalDemo></PortalDemo> */}
         {/* <RefsDemo></RefsDemo> */}
 
         {/* <ParentComp></ParentComp> */}
