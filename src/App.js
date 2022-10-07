@@ -2,7 +2,7 @@
 import './App.css';
 //import Greet from './components/Greet';
 import { Component } from 'react';
-import Hero from './components/Hero';
+// import Hero from './components/Hero';
 // import PortalDemo from './components/PortalDemo';
 // import Table from './components/Table';
 //import Welcome from './components/Welcome';
@@ -25,13 +25,33 @@ import Hero from './components/Hero';
 // import PureComp from './components/PureComp';
 // import ParentComp from './components/ParentComp';
 // import RefsDemo from './components/RefsDemo';
-import ErrorBoundary from './components/ErrorBoundary';
+// import ErrorBoundary from './components/ErrorBoundary';
+// import ClickCounter from './components/ClickCounter';
+// import HoverCounter from './components/HoverCounter';
+// import ClickCounterTwo from './components/ClickCounterTwo';
+// import HoverCounterTwo from './components/HoverCounterTwo';
+// import User from './components/User';
+import Counter1 from './components/Counter1';
+import ClickCounterTwo from './components/ClickCounterTwo';
+import HoverCounterTwo from './components/HoverCounterTwo';
 //Class component 
+
 class App extends Component{
   render(){
     return (
       <div className='App'>
-        <ErrorBoundary>
+        <Counter1 render={(count,incrementCount)=> <ClickCounterTwo count={count} incrementCount={incrementCount}></ClickCounterTwo> }></Counter1>
+        <Counter1 render={(count,incrementCount)=> <HoverCounterTwo count={count} incrementCount={incrementCount}></HoverCounterTwo>  }></Counter1>
+        
+        
+        {/* <ClickCounterTwo ></ClickCounterTwo> 
+        <HoverCounterTwo></HoverCounterTwo> */}
+        {/* <User render={(isLoggedIn)=>isLoggedIn?'Pawan':'Guest'}></User> */}
+        {/* <ClickCounter name='Pawan'></ClickCounter> */}
+        {/* <HoverCounter></HoverCounter> */}
+        
+        
+        {/* <ErrorBoundary>
           <Hero heroName='Batman'></Hero>
         </ErrorBoundary>
         <ErrorBoundary>
@@ -39,7 +59,7 @@ class App extends Component{
         </ErrorBoundary>
         <ErrorBoundary>
           <Hero heroName='Joker'></Hero>
-        </ErrorBoundary>
+        </ErrorBoundary> */}
         {/* <PortalDemo></PortalDemo> */}
         {/* <RefsDemo></RefsDemo> */}
 
@@ -139,3 +159,9 @@ export default App;
 
 //When yuo have to update state based on the previous state 
 //value, pass in a function as an argument instead of the regular object.
+
+
+
+
+
+//
