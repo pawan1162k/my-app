@@ -167,3 +167,29 @@ export default App;
 //Context
 //It provides a way to pass data through the component tree without having 
 //to pass props down manually at every level. 
+
+
+//React Hooks
+
+//What are Hook?
+//-> Hooks are new feature in react which allow you to use react features without havinh t o write a class
+
+//Ex: state of component
+//Hooks dont work inside class
+
+//Why hooks?
+//Reason set 1
+//  1.understand how this keyword works in javascript
+//  2.Remember to bind event handlers in class component
+//  3.Class don't minify very well and make hot reloading very unreliable
+
+//Reason set 2
+//  1. There is no particular way to reuse stateful component logic.
+//  2. HOC and render props pattern do address the problem
+//  3. Makes code harder to follow
+//  4. There is need to share stateful logic in a better way
+
+//Reason set 3
+//  1. Create component for complex scenarios such as data fetching and subscribing to events
+//  2. Related code is not organized in one place.
+
