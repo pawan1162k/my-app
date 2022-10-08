@@ -31,26 +31,29 @@ import { Component } from 'react';
 // import ClickCounterTwo from './components/ClickCounterTwo';
 // import HoverCounterTwo from './components/HoverCounterTwo';
 // import User from './components/User';
-import Counter1 from './components/Counter1';
-import ClickCounterTwo from './components/ClickCounterTwo';
-import HoverCounterTwo from './components/HoverCounterTwo';
+// import Counter1 from './components/Counter1';
+// import ClickCounterTwo from './components/ClickCounterTwo';
+// import HoverCounterTwo from './components/HoverCounterTwo';
+// import ComponentC from './components/ComponentC';
+// import { UserProvider } from './components/userContext';
 //Class component 
 
 class App extends Component{
   render(){
     return (
       <div className='App'>
-        <Counter1 render={(count,incrementCount)=> <ClickCounterTwo count={count} incrementCount={incrementCount}></ClickCounterTwo> }></Counter1>
-        <Counter1 render={(count,incrementCount)=> <HoverCounterTwo count={count} incrementCount={incrementCount}></HoverCounterTwo>  }></Counter1>
         
         
+        {/* <UserProvider value='Pawan'>
+          <ComponentC></ComponentC>
+        </UserProvider> */}
+        {/* <Counter1 render={(count,incrementCount)=> <ClickCounterTwo count={count} incrementCount={incrementCount}></ClickCounterTwo> }></Counter1>
+        <Counter1 render={(count,incrementCount)=> <HoverCounterTwo count={count} incrementCount={incrementCount}></HoverCounterTwo>  }></Counter1> */}
         {/* <ClickCounterTwo ></ClickCounterTwo> 
         <HoverCounterTwo></HoverCounterTwo> */}
         {/* <User render={(isLoggedIn)=>isLoggedIn?'Pawan':'Guest'}></User> */}
         {/* <ClickCounter name='Pawan'></ClickCounter> */}
         {/* <HoverCounter></HoverCounter> */}
-        
-        
         {/* <ErrorBoundary>
           <Hero heroName='Batman'></Hero>
         </ErrorBoundary>
@@ -161,7 +164,6 @@ export default App;
 //value, pass in a function as an argument instead of the regular object.
 
 
-
-
-
-//
+//Context
+//It provides a way to pass data through the component tree without having 
+//to pass props down manually at every level. 
